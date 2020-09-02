@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wather</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <link rel="stylesheet" href="css/index.css" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="top">
+      <div class="title-main"><span>CURRENT WEATHER</span></div>
+      <div class="search">
+        <div class="col s5">
+          <div class="input-field">
+            <input id="search" name="login" type="search" required="required" minlength="3"/>
+            <label for="search">Enter city</label>
+          </div>
+        </div>
+        <a class="btn-floating btn-small waves-effect waves-light teal lighten-2">
+          <i class="material-icons">search</i>
+        </a>
+      </div>
+    </div>
+    <div id="day">
+      <div class="title">
+        <div class="city"></div>
+        <div class="date"></div>
+      </div>
+      <div class="wrapper">
+        <div class="column-one">
+          <div class="describe"></div>
+          <div class="image"></div>
+        </div>
+        <div class="column-two">
+          <div class="temperature">
+            <span class="temperature-inner"></span><span>&deg;C</span>
+          </div>
+        </div>
+        <div class="column-three">
+          <div class="wind">
+            Wind: <span class="wind-inner"></span><span>km/h</span>
+          </div>
+          <div class="humidity">
+            Humidity: <span class="humidity-inner"></span><span>%</span>
+          </div>
+          <div class="pressure">
+            Pressure: <span class="pressure-inner"></span><span>mb</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="daily"></div>
+    <div id="result">
+      <div class="resultInner">
+        <p id="statusNumber">404</p>
+        <p id="statusTextTop">NOT FOUND</p>
+        <p id="statusTextBottom">Please enter differen city</p>
+      </div>
+    </div>
+  </body>
+</html>
